@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Generator</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    SET GRADIENT
+    <div class="colours">
+      <input type="color" id="colour-a" value="#d1e0ff">
+      <input type="color" id="colour-b" value="#d812ff">
+    </div>
+    <div class="btns">
+      <button onclick= "setDirection('to top', this)">
+        <img src="img/up-arrow.png" alt="" width="20px">
+      </button>
+      <button onclick= "setDirection('to bottom', this)">
+        <img src="img/down-arrow.png" alt="" width="20px">
+      </button>
+      <button onclick= "setDirection('to left', this)">
+        <img src="img/left-arrow.png" alt="" width="20px">
+      </button>
+       <button onclick= "setDirection('to right', this)">
+        <img src="img/right-arrow.png" alt="" width="20px">
+      </button>
+      <button class="icon" onclick= "setDirection('to top right', this)">
+        <img src="img/up-arrow.png" alt="" width="20px">
+      </button>
+      <button class="icon" onclick= "setDirection('to bottom left', this)">
+        <img src="img/down-arrow.png" alt="" width="20px">
+      </button>
+      <button class="icon" onclick= "setDirection('to top left', this)">
+        <img src="img/left-arrow.png" alt="" width="20px">
+      </button>
+       <button class="icon" onclick= "setDirection('to bottom right', this)">
+        <img src="img/right-arrow.png" alt="" width="20px">
+      </button>
+    </div>
+    <div id="submit" onclick="generateCode()">Generate</div>
+    <div class="output">
+      <textarea name="output" id="code" rows="5"></textarea>
+      <button id="copy" onclick="copy()">Copy</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
